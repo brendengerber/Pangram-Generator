@@ -3,7 +3,6 @@ const animalList = require('./animalList.json');
 const adjectiveList = require('./adjectiveList.json');
 const verbList = require('./verbList.json');
 
-
 let pangramGenerator = {
     animals: animalList,
     verbs: verbList,
@@ -28,3 +27,4 @@ let pangramGenerator = {
 };
 
 console.log(pangramGenerator.generate())
+ 
