@@ -1,7 +1,7 @@
-const fs = require('fs')
-const animalList = require('./animalList.json')
-const adjectiveList = require('./adjectiveList.json')
-const verbList = require('./verbList.json')
+const fs = require('fs');
+const animalList = require('./animalList.json');
+const adjectiveList = require('./adjectiveList.json');
+const verbList = require('./verbList.json');
 
 
 let pangramGenerator = {
@@ -10,25 +10,21 @@ let pangramGenerator = {
     adjectives: adjectiveList,
     generate: function(){
         let pangramLetters = [];
-        let alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+        let alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
         let randomNumber = function(max){return Math.floor(Math.random()*(max))};
-        let pangram = ''
+        let pangram = '';
         while (pangramLetters.length < 26) {
-            pangramLetters = []
+            pangramLetters = [];
             pangram = `The ${this.adjectives[randomNumber(this.adjectives.length)]} ${this.adjectives[randomNumber(this.adjectives.length)]} ${this.animals[randomNumber(this.animals.length)]} ${this.verbs[randomNumber(this.verbs.length)]} the ${this.adjectives[randomNumber(this.adjectives.length)]} ${this.animals[randomNumber(this.animals.length)]}.`;
             for(letter of pangram){
-                letter = letter.toLowerCase()
+                letter = letter.toLowerCase();
                 if(pangramLetters.includes(letter) !== true && alphabet.includes(letter) === true){
-                    pangramLetters.push(letter)
+                    pangramLetters.push(letter);
                 }
             } 
         }
         return pangram
-    }
+    }   
 };
 
 console.log(pangramGenerator.generate())
-
-
-
-//need to reset pangramLetters after each faile attempt!
