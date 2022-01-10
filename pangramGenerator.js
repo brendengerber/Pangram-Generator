@@ -1,5 +1,5 @@
 const fs = require('fs');
-const dictionary = require("./dictionary.json")
+const dictionary = require("./dictionary.json");
 let pangramGenerator = {
     animals: dictionary["animals"],
     verbs: dictionary["verbs"],
