@@ -23,7 +23,7 @@
 // });
 
 
-// The below code can be uncommented and used to combine seperate word lists if necessary. 
+// The below code can be uncommented and used to combine seperate word lists if necessary. If you are using different parts of speech, make sure to change the variables as well as the dictionary object.
 // //To use, add your individual JSON objects to the below variables.
 // let adjectivesSeperate = require("./adjectiveList.json")
 // let verbsSeperate = require("./verbList.json")

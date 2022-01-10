@@ -8,7 +8,9 @@ _________
 * To generate a pangram open the html file in your browser and click "generate".
 * Alternatively open pangramGenerator.js in Node and log pangramGenerator.generate() to the console to generate a pangram.
 ### List Parser
-* To add your own words to the database, open listParser.js, add your words to the "raw" variable as a multi line string (each word should be on its own line, other spacing and formatting will be done automatically). Run the script in Node and the JSON files will be automatically updated.
+* To add your own words to the database, open listParser.js, add your words to the "raw" variable as a multi line string (each word should be on its own line, other spacing and formatting will be done automatically). Set "pos" equal to the part of speech that your word list is in string format (current options are "adjectives", "verbs", and "animals"). Run the script in Node and dictionary.json will be automatically updated.
+### Other Useful Code
+* The code in this file may be useful if creating new lists or dictionaries with your own content. The two scripts can be used to format and combine lists.
 ## **Credits**
 ______
 
