@@ -1,12 +1,9 @@
 const fs = require('fs');
-const animalList = require('./animalList.json');
-const adjectiveList = require('./adjectiveList.json');
-const verbList = require('./verbList.json');
-
+const dictionary = require("./dictionary.json")
 let pangramGenerator = {
-    animals: animalList,
-    verbs: verbList,
-    adjectives: adjectiveList,
+    animals: dictionary["animal"],
+    verbs: dictionary["verb"],
+    adjectives: dictionary["adjective"],
     generate: function(){
         let pangramLetters = [];
         let alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
@@ -24,7 +21,4 @@ let pangramGenerator = {
         }
         return pangram
     }   
-};
-
-console.log(pangramGenerator.generate())
- 
+}; 
