@@ -1,9 +1,8 @@
 //This code organizes and formats lists of words for the database. Enter the list in a multi line string. The only requirement is that each entry be on its own line.
-let raw = `test1
-test1`
+let raw = ``
 
 //Input the part of speech you wish to add as it is in dictionary.json ("adjectives", "verbs", or "animals".)
-let pos = 'adjectives'
+let pos = ''
 
 //Opens and parses JSON.
 let dictionary = require("./dictionary.json")
