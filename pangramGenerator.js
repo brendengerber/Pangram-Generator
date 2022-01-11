@@ -1,4 +1,3 @@
-const fs = require('fs');
 const dictionary = require("./dictionary.json");
 let pangramGenerator = {
     animals: dictionary["animals"],
@@ -22,4 +21,3 @@ let pangramGenerator = {
         return pangram
     }   
 }; 
-
