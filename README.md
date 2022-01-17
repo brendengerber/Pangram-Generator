@@ -14,7 +14,7 @@ _________
 ## **Credits**
 ______
 
-Thank you to @thusmiley https://github.com/thusmiley for the front end work!
+    `Thank you ${kindContributorName} for your UX/UI design!`
 
 ## **License**
 ____________
